@@ -38,6 +38,9 @@ header {
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 #menu ul {
@@ -245,6 +248,18 @@ article h2 {
   border-radius: 8px;
 }
 
+footer {
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  text-align: center;
+  padding: 15px;
+}
+
+footer a {
+  color: var(--texto-inverso);
+  text-decoration: none;
+  font-weight: bold;
+}
 
 @media screen and (min-width: 768px) {
   #skill-container {
@@ -254,5 +269,15 @@ article h2 {
   .projeto {
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+
+  .info {
+    max-width: 80%;
+  }
+
+  .foto {
+    aspect-ratio: 1/1;
+    max-width: 20%;
+    max-height: 200px;
   }
 }
